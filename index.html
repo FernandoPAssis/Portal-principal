@@ -1,145 +1,160 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Cantinho dos Jogos 🎮</title>
-  <style>
-    /* Estilos Globais e Tema Divertido */
-    :root {
-      --bg-color: #f4f7fe;
-      --card-bg: #ffffff;
-      --primary: #6c5ce7;
-      --primary-hover: #5b4bc4;
-      --accent-1: #ff7675;
-      --accent-2: #00b894;
-      --accent-3: #fdcb6e;
-      --text-dark: #2d3436;
-      --text-muted: #636e72;
-      --radius: 20px;
-    }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    }
+    <title>Cantinho dos Jogos 🎮</title>
+    <meta name="description" content="Jogos educativos, simples e divertidos para as crianças jogarem no navegador!">
 
-    body {
-      background-color: var(--bg-color);
-      color: var(--text-dark);
-      min-height: 100vh;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      padding: 2rem 1rem;
-    }
+    <!-- Open Graph / Meta tags para WhatsApp e Redes Sociais -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://fernandopassis.github.io/Portal-principal/index.html">
+    <meta property="og:title" content="Cantinho dos Jogos 🎮✨">
+    <meta property="og:description" content="Jogos simples, educativos e divertidos para a criançada!">
 
-    /* Cabeçalho */
-    header {
-      text-align: center;
-      margin-bottom: 2.5rem;
-    }
+    <!-- Link para a Imagem de Capa (WebP Otimizado) -->
+    <meta property="og:image" content="https://fernandopassis.github.io/Portal-principal/capa.webp">
+    <meta property="og:image:type" content="image/webp">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
 
-    header h1 {
-      font-size: 2.5rem;
-      color: var(--primary);
-      margin-bottom: 0.5rem;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 0.5rem;
-    }
+    <style>
+        /* Estilos Globais e Tema Divertido */
+        :root {
+            --bg-color: #f4f7fe;
+            --card-bg: #ffffff;
+            --primary: #6c5ce7;
+            --primary-hover: #5b4bc4;
+            --accent-1: #ff7675;
+            --accent-2: #00b894;
+            --accent-3: #fdcb6e;
+            --text-dark: #2d3436;
+            --text-muted: #636e72;
+            --radius: 20px;
+        }
 
-    header p {
-      font-size: 1.1rem;
-      color: var(--text-muted);
-    }
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
 
-    /* Grid de Jogos */
-    .games-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 1.8rem;
-      width: 100%;
-      max-width: 1000px;
-    }
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-dark);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 2rem 1rem;
+        }
 
-    /* Card do Jogo */
-    .game-card {
-      background: var(--card-bg);
-      border-radius: var(--radius);
-      padding: 1.5rem;
-      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
-      transition: transform 0.25s ease, box-shadow 0.25s ease;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      border: 3px solid transparent;
-      position: relative;
-      overflow: hidden;
-    }
+        /* Cabeçalho */
+        header {
+            text-align: center;
+            margin-bottom: 2.5rem;
+        }
 
-    .game-card:hover {
-      transform: translateY(-6px);
-      box-shadow: 0 15px 30px rgba(108, 92, 231, 0.15);
-      border-color: var(--primary);
-    }
+            header h1 {
+                font-size: 2.5rem;
+                color: var(--primary);
+                margin-bottom: 0.5rem;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 0.5rem;
+            }
 
-    .card-icon {
-      font-size: 3rem;
-      background: #f0edff;
-      width: 70px;
-      height: 70px;
-      border-radius: 16px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      margin-bottom: 1rem;
-    }
+            header p {
+                font-size: 1.1rem;
+                color: var(--text-muted);
+            }
 
-    .game-card h2 {
-      font-size: 1.35rem;
-      margin-bottom: 0.5rem;
-      color: var(--text-dark);
-    }
+        /* Grid de Jogos */
+        .games-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.8rem;
+            width: 100%;
+            max-width: 1000px;
+        }
 
-    .game-card p {
-      font-size: 0.95rem;
-      color: var(--text-muted);
-      line-height: 1.4;
-      margin-bottom: 1.5rem;
-      flex-grow: 1;
-    }
+        /* Card do Jogo */
+        .game-card {
+            background: var(--card-bg);
+            border-radius: var(--radius);
+            padding: 1.5rem;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+            transition: transform 0.25s ease, box-shadow 0.25s ease;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            border: 3px solid transparent;
+            position: relative;
+            overflow: hidden;
+        }
 
-    .btn-play {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      gap: 0.5rem;
-      background-color: var(--primary);
-      color: #ffffff;
-      text-decoration: none;
-      font-weight: bold;
-      padding: 0.8rem 1.2rem;
-      border-radius: 12px;
-      transition: background-color 0.2s ease;
-    }
+            .game-card:hover {
+                transform: translateY(-6px);
+                box-shadow: 0 15px 30px rgba(108, 92, 231, 0.15);
+                border-color: var(--primary);
+            }
 
-    .btn-play:hover {
-      background-color: var(--primary-hover);
-    }
+        .card-icon {
+            font-size: 3rem;
+            background: #f0edff;
+            width: 70px;
+            height: 70px;
+            border-radius: 16px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 1rem;
+        }
 
-    /* Rodapé */
-    footer {
-      margin-top: auto;
-      padding-top: 3rem;
-      text-align: center;
-      color: var(--text-muted);
-      font-size: 0.9rem;
-    }
-  </style>
+        .game-card h2 {
+            font-size: 1.35rem;
+            margin-bottom: 0.5rem;
+            color: var(--text-dark);
+        }
+
+        .game-card p {
+            font-size: 0.95rem;
+            color: var(--text-muted);
+            line-height: 1.4;
+            margin-bottom: 1.5rem;
+            flex-grow: 1;
+        }
+
+        .btn-play {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+            background-color: var(--primary);
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 0.8rem 1.2rem;
+            border-radius: 12px;
+            transition: background-color 0.2s ease;
+        }
+
+            .btn-play:hover {
+                background-color: var(--primary-hover);
+            }
+
+        /* Rodapé */
+        footer {
+            margin-top: auto;
+            padding-top: 3rem;
+            text-align: center;
+            color: var(--text-muted);
+            font-size: 0.9rem;
+        }
+    </style>
 </head>
 <body>
 
