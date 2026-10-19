@@ -39,6 +39,13 @@
                 descricao: "Resolva problemas de multiplicação e divisão na tabuada.",
                 icone: "🧮",
                 link: "https://fernandopassis.github.io/Tabuada/jogo_da_tabuada_divertida.html"
+            },
+
+            {
+                titulo: "Tubo das cores",
+                descricao: "Organize as bolinhas coloridas nos tubos até reunir todas as cores iguais no mesmo tubo!",
+                icone: "🔵",
+                link: "https://fernandopassis.github.io/Jogo_Tubo_bolinhas_Coloridas/Jogo_Tubo_Bolinhas_Coloridas.html"
             }
 
 
