@@ -46,9 +46,14 @@
                 descricao: "Organize as bolinhas coloridas nos tubos até reunir todas as cores iguais no mesmo tubo!",
                 icone: "🔵",
                 link: "https://fernandopassis.github.io/Jogo_Tubo_bolinhas_Coloridas/Jogo_Tubo_Bolinhas_Coloridas.html"
+            },
+
+            {
+                titulo: "Jogo de Xadrez",
+                descricao: "Desafie a sua mente no tabuleiro de xadrez!",
+                icone: "🐴",
+                link: "https://fernandopassis.github.io/Jogo_Xadrez/xadrez.html"
             }
-
-
 
         ];
 
