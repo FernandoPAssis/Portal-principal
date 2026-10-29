@@ -53,6 +53,13 @@
                 descricao: "Desafie a sua mente no tabuleiro de xadrez!",
                 icone: "🐴",
                 link: "https://fernandopassis.github.io/Jogo_Xadrez/xadrez.html"
+            },
+
+            {
+                titulo: "Piano/Teclado",
+                descricao: "Tocar música no piano ou teclado virtual!",
+                icone: "🎹",
+                link: "https://fernandopassis.github.io/Teclado/teclado.html"
             }
 
         ];
